@@ -1,0 +1,65 @@
+body {
+    background: #ffffff; /* Set the body background to white or any other color */
+    font-family: 'Arial', sans-serif; /* Set the default font for the entire postcard */
+}
+
+.postcard {
+    width: 300px;
+    margin: 0 auto;
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.postcard-header, .postcard-body {
+    display: flex;
+    align-items: center;
+}
+
+.postcard-header h1 {
+    flex: 1;
+    font-family: 'Cursive', sans-serif; /* Change to a fancy font */
+    font-size: 1.5rem;
+}
+
+.postcard-header img {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+}
+
+.postcard-body {
+    justify-content: space-between;
+}
+
+.body-left {
+    flex: 1;
+    font-family: 'Cursive', sans-serif; /* Change to a fancy font */
+    font-size: 1.2rem; /* Increase font size */
+}
+
+.body-right {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.postcard-footer {
+    text-align: center;
+    margin-top: 20px;
+}
+
+.postcard-footer button {
+    background: lightgrey;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.postcard-footer button:hover {
+    background: grey;
+    color: white;
+}
